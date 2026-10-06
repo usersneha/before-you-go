@@ -3,67 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For Your Next Chapter ❤️</title>
+  <title>Before You Go, Puucchuuuu ❤️</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="page">
-    <section class="hero" id="hero">
-      <div class="stars" aria-hidden="true"></div>
-      <p class="eyebrow">A little something before your next chapter</p>
-      <h1>For Your<br><em>Next Chapter.</em></h1>
-      <p class="intro">A tiny corner of the internet made just for you.</p>
-      <button class="primary" onclick="startJourney()">Start <span>→</span></button>
+  <main>
+    <section class="opening" id="hero">
+      <div class="topline">FROM HERE <span>→</span> HYDERABAD</div>
+      <div class="opening-inner">
+        <p class="whisper">psst… puucchuuuu</p>
+        <h1>Before<br><em>you go.</em></h1>
+        <p class="opening-copy">I know you're going to build something beautiful there.<br>So I made you a little reminder for the days in between.</p>
+        <button class="open-btn" onclick="startJourney()">Open this <span>♡</span></button>
+      </div>
+      <div class="scroll-hint">for my betttuuuu ↓</div>
     </section>
 
-    <section class="content hidden" id="content">
-      <div class="section-card">
-        <span class="number">01</span>
-        <h2>Hyderabad.</h2>
-        <p>Tomorrow isn't just a move, betttuuuu. It's the beginning of something you've been working towards.</p>
-        <p>A new city. New opportunities. New people. New challenges. And hopefully, a lot of things you're going to be proud of.</p>
+    <section class="letter hidden" id="content">
+      <div class="hello">
+        <p class="label">01 — YOUR NEXT CHAPTER</p>
+        <h2>Go.<br><em>Seriously, go.</em></h2>
+        <p>Tomorrow, you're stepping into a new city and a new phase of your life, betttuuuu.</p>
+        <p>And I don't want you to be scared of how much is changing. I want you to be excited about how much <em>can</em> change.</p>
+        <div class="quote">“You are capable of so much more than you think.”</div>
       </div>
 
-      <div class="section-card">
-        <span class="number">02</span>
-        <h2>Remember this.</h2>
-        <p>You don't have to figure everything out at once.</p>
-        <p>Take the opportunities. Make mistakes. Learn. Keep going. There will be difficult days, but one difficult day will never define what you're capable of.</p>
-        <blockquote>“Keep going. You're building something.”</blockquote>
+      <div class="split">
+        <div class="side-label">02</div>
+        <div>
+          <p class="label">WHAT I WANT YOU TO REMEMBER</p>
+          <h3>You don't have to have it all figured out.</h3>
+          <p>Learn. Mess up. Ask questions. Try again. Take the opportunities that scare you a little.</p>
+          <p>Some days will be amazing. Some will be exhausting. Neither kind of day decides your worth.</p>
+        </div>
       </div>
 
-      <div class="section-card">
-        <span class="number">03</span>
-        <h2>On the hard days.</h2>
+      <div class="hard-days">
+        <div class="circle">03</div>
+        <p class="label">FOR THE HARD DAYS</p>
+        <h2>If Hyderabad<br>feels <em>too much.</em></h2>
         <p>If work gets overwhelming, if you miss home, or if you start doubting yourself, my pyaara bacchhaa — pause.</p>
-        <p>Take a breath. Remember why you started. Then take the next small step.</p>
-        <p class="accent">And if my chotuuu saaa babyyyy ever needs someone to remind him that he's got this… you already know who to call. ❤️</p>
+        <p>Drink some water. Take a breath. Rest if you need to. Then take just <strong>one</strong> next step.</p>
+        <p class="callout">And if my chotuuu saaa babyyyy needs someone to remind him that he's got this…<br><strong>you already know who to call.</strong> ❤️</p>
       </div>
 
-      <div class="section-card">
-        <span class="number">04</span>
-        <h2>On the good days.</h2>
-        <p>When you get that interview. When you get the job. When you have your first really good day at work. When something you've been waiting for finally happens…</p>
-        <p><strong>CALL ME, PUTTTUUUU BABYYYY.</strong></p>
-        <p>I want the full story. 😂❤️</p>
+      <div class="good-days">
+        <p class="label">04 — FOR THE GOOD DAYS</p>
+        <h2>When something<br><em>finally works.</em></h2>
+        <p>First interview. First offer. First good day at work. First time you realize, “Wait… I can actually do this.”</p>
+        <p>Whatever it is, I want to hear the whole story.</p>
+        <button class="call-btn" onclick="revealNote()">CALL YOUR GIRL, PUTTTUUUU BABYYYY 📞</button>
+        <p class="hidden-note" id="note">I will be ridiculously proud of you. And yes, I will probably ask for every tiny detail. 😂❤️</p>
       </div>
 
-      <div class="final-card">
-        <div class="tiny-heart">♡</div>
-        <span class="number">05</span>
-        <h2>One thing<br><em>that won't change.</em></h2>
+      <div class="promise">
+        <p class="label">05 — AND THIS ONE IS IMPORTANT</p>
+        <div class="promise-heart">♥</div>
+        <h2>Distance can change<br>a lot of things.</h2>
+        <p>Schedules. Cities. Routines. The amount of time we get together.</p>
+        <p class="strong">But not where I stand.</p>
         <p>No matter where life takes you, meri jaanuu, I'll always be in your corner.</p>
-        <p>I want to see you chase your dreams, build your career and become everything you want to become.</p>
-        <p class="big-line">Go build the life you're dreaming about, meri jaanuu. ❤️</p>
-        <p class="signature">— someone who's always rooting for you ❤️</p>
+        <p>I want to watch you chase your dreams, build your career, grow into yourself and become everything you want to become.</p>
+        <h3>So go build your life,<br><em>my love.</em></h3>
+        <p class="signature">I'll be cheering for you from here. Always. ❤️</p>
       </div>
 
-      <div class="footer-note">
-        <p>Made with love, from here to Hyderabad.</p>
-        <div class="line"></div>
+      <div class="ending">
+        <p>one last thing, puucchuuuu…</p>
+        <h2>I'm proud of you<br><em>already.</em></h2>
+        <div class="tiny-route">HERE <span>• • • • •</span> HYDERABAD</div>
       </div>
     </section>
   </main>
